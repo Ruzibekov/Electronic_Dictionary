@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Electronic Dictionary"
+            android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="30sp" />
 
@@ -31,13 +31,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.2"
-                android:hint="Write text" />
+                android:hint="@string/hint_write_text"
+                android:autofillHints=""
+                android:inputType="text" />
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.8"
-                android:src="@drawable/ic_arrow_send" />
+                android:src="@drawable/ic_arrow_send"
+                android:contentDescription="@string/description_enter" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,13 +49,13 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="24.dp"
-                android:layout_height="24.dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_sound" />
 
             <ImageView
-                android:layout_width="24.dp"
-                android:layout_height="24.dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_sound" />
         </LinearLayout>
 
@@ -64,7 +67,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginTop="20.dp"
+            android:layout_marginTop="20dp"
             android:background="@android:color/darker_gray" />
 
     </LinearLayout>

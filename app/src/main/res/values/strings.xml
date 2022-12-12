@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Electronic Dictionary</string>
+    <string name="hint_write_text">Write text</string>
+    <string name="description_enter">Enter</string>
 </resources>
