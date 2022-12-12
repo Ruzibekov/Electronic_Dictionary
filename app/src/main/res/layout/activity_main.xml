@@ -14,6 +14,16 @@
         android:paddingVertical="20dp"
         tools:context=".MainActivity">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_launcher"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,6 +31,8 @@
             android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="30sp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,12 +47,11 @@
                 android:autofillHints=""
                 android:inputType="text" />
 
-            <ImageButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.8"
-                android:src="@drawable/ic_arrow_send"
-                android:contentDescription="@string/description_enter" />
+                android:text="@string/button_ok" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,16 +59,48 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_sound" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uzbek" />
 
             <ImageView
+                android:layout_marginHorizontal="20dp"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_sound" />
+                android:src="@drawable/ic_sync"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English" />
         </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                tools:text="So'z tarjimasi"/>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_sound"/>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_sound"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.yihsian.slider.library.SliderItemView
+            android:id="@+id/main_video_slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
 
         <TextView
             android:layout_width="match_parent"
